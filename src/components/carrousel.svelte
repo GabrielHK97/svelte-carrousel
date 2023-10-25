@@ -16,7 +16,7 @@
   let secs: number;
 
   function resetIndex(i: number): number {
-    if (i > images.length - 1) {
+    if (Math.abs(i) > images.length - 1) {
       return i % images.length;
     } else {
       return i;
